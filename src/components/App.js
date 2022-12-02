@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
@@ -25,14 +25,14 @@ function App() {
     return (
         <div>
             <NavBar />
-            <Switch>
-                <Route exact path="/">
+            <Routes>
+                <Route element="/">
                     <Home />
                 </Route>
-                <Route exact path="/about">
+                <Route element="/about">
                     <About />
                 </Route>
-            </Switch>
+            </Routes>
         </div>
     )
 }
