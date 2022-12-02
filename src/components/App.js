@@ -7,4 +7,30 @@ import Superheros from './Superheros';
 import NewSupeForm from './NewSupeForm';
 
 
+function App() {
+    const [superheroes, setSuperheros] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:9292/superheros")
+        .then((res) => res.json())
+        .then((data) =>
+            setSuperheros(data)
+        )
+    }, [])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export default App;
