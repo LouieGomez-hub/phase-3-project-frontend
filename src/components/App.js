@@ -22,6 +22,19 @@ function App() {
         setSuperheros([...superheroes, newSupe])
     }
 
+    return (
+        <div>
+            <NavBar />
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <About />
+                </Route>
+            </Switch>
+        </div>
+    )
 }
 
 
