@@ -13,8 +13,8 @@ function App() {
     useEffect(() => {
         fetch("http://localhost:9292/superheros")
         .then((res) => res.json())
-        .then((data) =>
-            setSuperheros(data)
+        .then((superheroes) =>
+            setSuperheros(superheroes)
         )
     }, [])
 }
