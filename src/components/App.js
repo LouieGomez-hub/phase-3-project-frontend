@@ -17,6 +17,11 @@ function App() {
             setSuperheros(superheroes)
         )
     }, [])
+
+    function handleAddSupe(newSupe) {
+        setSuperheros([...superheroes, newSupe])
+    }
+
 }
 
 
