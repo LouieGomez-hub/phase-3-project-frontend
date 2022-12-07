@@ -8,7 +8,7 @@ function NavBar() {
                 to="/"
                 exact
             >
-                <header>Made <br></br> Super</header>
+                <header>Made Super</header>
             </NavLink>
             <NavLink
                 to="/superheros"
