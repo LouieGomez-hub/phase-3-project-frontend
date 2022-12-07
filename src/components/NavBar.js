@@ -1,9 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <div></div>
+        <div className='navbar'>
+            <NavLink
+                to="/"
+                exact
+            >
+                <header>Made <br></br> Super</header>
+            </NavLink>
+            <NavLink
+                to="/superheros"
+                exact
+            >
+                Hero Suite
+            </NavLink>
+            <NavLink
+                to="/about"
+            >
+                About
+            </NavLink>
+        </div>
     )
 }
 
