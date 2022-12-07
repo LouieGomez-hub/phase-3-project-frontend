@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-image: url('https://i.pinimg.com/originals/e6/00/af/e600afbaeec968ec329c4b9d9c90d81c.jpg');
+  background-size: cover;
 }
 
 .navbar {

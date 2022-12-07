@@ -6,13 +6,11 @@ function NavBar() {
         <div className='navbar'>
             <NavLink
                 to="/"
-                exact
             >
                 <header>Made Super</header>
             </NavLink>
             <NavLink
                 to="/superheros"
-                exact
             >
                 Hero Suite
             </NavLink>

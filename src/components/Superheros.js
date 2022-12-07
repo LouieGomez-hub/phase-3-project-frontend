@@ -7,5 +7,4 @@ function Superheros() {
     )
 }
 
-
 export default Superheros;

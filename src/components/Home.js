@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 function Home() {
     return (
-        <h1>Phase 3 Project</h1>
+        <div>
+            <h1>Custom Built Superpowered Heroes</h1>
+            <p>Heroes made For You By You</p>
+        </div>
     )
 }
-
-
-
 
 export default Home;
