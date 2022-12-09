@@ -9,12 +9,13 @@ function NavBar() {
             >
                 Made <br/> Super
             </NavLink>
-            <NavLink
+            <img className='headerimg' src="https://www.kindpng.com/picc/m/113-1132490_transparent-believe-clipart-superhero-clipart-transparent-hd-png.png" alt="Transparent Believe Clipart - Superhero Clipart Transparent, HD Png Download@kindpng.com"></img>
+            <NavLink className='navlink'
                 to="/superheros"
             >
                 Hero Suite
             </NavLink>
-            <NavLink
+            <NavLink className='navlink'
                 to="/about"
             >
                 About

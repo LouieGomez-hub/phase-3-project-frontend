@@ -30,6 +30,11 @@ a {
   color: rgb(210, 156, 87);
 }
 
+.navlink {
+  margin-left: 65%;
+  margin-right: -65%;
+}
+
 .active {
   color: royalblue;
   text-decoration: none;
@@ -51,4 +56,10 @@ p, .Home-component {
   margin-top: -1%;
   font-size: 20px;
   font-style: italic;
+}
+
+.headerimg {
+  height: 80px;
+  width: 130px;
+  margin-left: -75%;
 }
