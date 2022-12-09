@@ -7,16 +7,48 @@ body {
 .navbar {
   display: flex;
   gap: 1rem;
-  background-color: white;
-  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.614);
+  font-size: 25px;
   font-weight: bold;
 }
 
 .headerlink {
+  text-decoration: none;
   margin-right: 75%;
-  font-size: 35px;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: -2px 1px peachpuff;
   font-style: italic;
   color: royalblue;
+  line-height: 35px;
+  margin-top: 7px;
+}
+
+a {
+  font-family: Georgia;
+  text-shadow: 1px 1px black;
+  color: rgb(210, 156, 87);
+}
+
+.active {
+  color: royalblue;
+  text-decoration: none;
+}
+
+h1, .Home-component {
+  margin-left: 42%;
+  color: whitesmoke;
+  font-family: 'Times New Roman';
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  margin-top: 5%;
+}
+
+p, .Home-component {
+  margin-left: 42%;
+  color: whitesmoke;
+  font-family: 'Times New Roman';
+  margin-top: -1%;
+  font-size: 20px;
+  font-style: italic;
 }
