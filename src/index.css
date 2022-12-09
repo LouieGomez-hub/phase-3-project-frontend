@@ -6,9 +6,17 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: right;
-  gap: 10rem;
+  gap: 1rem;
   background-color: white;
   font-size: 30px;
-  line-height: 65px;
+  font-weight: bold;
+}
+
+.headerlink {
+  margin-right: 75%;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: -2px 1px peachpuff;
+  font-style: italic;
+  color: royalblue;
 }

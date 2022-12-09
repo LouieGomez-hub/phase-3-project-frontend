@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 function NavBar() {
     return (
         <div className='navbar'>
-            <NavLink
+            <NavLink className='headerlink'
                 to="/"
             >
-                <header>Made Super</header>
+                Made <br/> Super
             </NavLink>
             <NavLink
                 to="/superheros"
