@@ -1,9 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import CommentsContainer from './CommentsContainer';
+import React from 'react';
 
-function Superheros() {
+function Superheros({ superheros }) {
+    let heroSuite;
+
+    heroSuite = superheros.map(superhero => {
+        let { id, name, power } = superhero
+
+        return (
+          <div key={id} className='suite-container'>
+            <div className='cards'>
+              <div className='content'>
+              <h1>{name}</h1>
+              <p><strong>Powers:</strong> <em>{power}</em></p>
+              </div>
+            </div>
+          </div>
+        )
+    })
+
     return (
-        <div></div>
+        <div>{heroSuite}</div>
     )
 }
 
