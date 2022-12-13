@@ -63,3 +63,10 @@ p, .Home-component {
   width: 130px;
   margin-left: -75%;
 }
+
+.suite-container {
+  display: inline-block;
+  width: 50%;
+  margin-left: -17%;
+  margin-block-end: 7%;
+}

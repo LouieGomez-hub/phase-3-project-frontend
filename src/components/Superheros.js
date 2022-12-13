@@ -9,10 +9,8 @@ function Superheros({ superheros }) {
         return (
           <div key={id} className='suite-container'>
             <div className='cards'>
-              <div className='content'>
-              <h1>{name}</h1>
-              <p><strong>Powers:</strong> <em>{power}</em></p>
-              </div>
+              <h1 className='content-name'>{name}</h1>
+              <p className='content-attr'><strong>Powers:</strong> <em>{power}</em></p>
             </div>
           </div>
         )
