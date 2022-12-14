@@ -81,8 +81,9 @@ p, .Home-component {
 .content-name  {
   margin: auto;
   color: black;
-  text-shadow: -1px 1px rgba(0, 0, 255, 0.716);
+  text-shadow: -1px 1px rgba(245, 222, 179, 0.86);
   text-decoration-style: double;
+  margin-block-end: 2%;
 }
 
 .content-attr {
@@ -90,4 +91,10 @@ p, .Home-component {
   color: black;
   font-family: Georgia;
   line-height: 40px;
+  margin-block-end: 5%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
 }
