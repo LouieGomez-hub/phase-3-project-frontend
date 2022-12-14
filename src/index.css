@@ -66,7 +66,17 @@ p, .Home-component {
 
 .suite-container {
   display: inline-block;
-  width: 50%;
-  margin-left: -17%;
+  width: 33%;
+  margin-left: 0%;
   margin-block-end: 7%;
+  margin-top: 1%;
+}
+
+.cards {
+  width: fit-content;
+  border: ridge;
+}
+
+.content-name, .content-attr {
+  margin: auto;
 }
