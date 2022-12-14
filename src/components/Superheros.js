@@ -9,7 +9,7 @@ function Superheros({ superheros }) {
         return (
           <div key={id} className='suite-container'>
             <div className='cards'>
-              <h1 className='content-name'>{name}</h1>
+              <h1 className='content-name'>Alias: <em>{name}</em></h1>
               <p className='content-attr'><strong>Powers:</strong> <em>{power}</em></p>
             </div>
           </div>

@@ -74,9 +74,20 @@ p, .Home-component {
 
 .cards {
   width: fit-content;
-  border: ridge;
+  border: groove;
+  background-color: rgba(255, 255, 255, 0.796);
 }
 
-.content-name, .content-attr {
+.content-name  {
   margin: auto;
+  color: black;
+  text-shadow: -1px 1px rgba(0, 0, 255, 0.716);
+  text-decoration-style: double;
+}
+
+.content-attr {
+  margin: auto;
+  color: black;
+  font-family: Georgia;
+  line-height: 40px;
 }
