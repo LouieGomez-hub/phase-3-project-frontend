@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NewSupeForm from './NewSupeForm';
 
-function Superheros({ superheros, handleAddSupe }) {
+function Superheros({ superheros }) {
     let heroSuite;
 
     heroSuite = superheros.map(superhero => {
@@ -20,10 +19,7 @@ function Superheros({ superheros, handleAddSupe }) {
     })
 
     return (
-        <div>
-          <NewSupeForm onAddSuperhero={handleAddSupe}/>
-          {heroSuite}
-        </div>
+        <div>{heroSuite}</div>
     )
 }
 
