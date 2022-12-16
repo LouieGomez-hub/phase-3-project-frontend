@@ -8,7 +8,8 @@ import NewSupeForm from './NewSupeForm';
 
 
 function App() {
-    const [superheros, setSuperheros] = useState([])
+    const [superheros, setSuperheros] = useState([]);
+    const [comments, SetComments] = useState("");
 
     useEffect(() => {
         fetch("http://localhost:9292/superheros")
@@ -17,6 +18,14 @@ function App() {
             setSuperheros(superheros)
         )
     }, [])
+
+    useEffect(() => {
+        fetch("http://localhost:9292/comments")
+        .then((res) => res.json())
+        .then((comments) =>
+            SetComments(comments)
+        )
+    })
 
     function handleAddSupe(newSupe) {
         setSuperheros([...superheros, newSupe])
@@ -27,8 +36,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route exact path="/" element={<Home />}/>
-                <Route exact path="/superheros" element={<Superheros superheros={superheros} />}/>
-                <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
+                <Route exact path="/superheros" element={<Superheros superheros={superheros} onAddSuperhero={handleAddSupe}/>}/>
                 <Route exact path="/about" element={<About />}/>
             </Routes>
         </div>
