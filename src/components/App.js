@@ -36,7 +36,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route exact path="/" element={<Home />}/>
-                <Route exact path="/superheros" element={<Superheros superheros={superheros} />}/>
+                <Route exact path="/superheros" element={<Superheros superheros={superheros} comments={comments} />}/>
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
             </Routes>

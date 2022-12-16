@@ -42,7 +42,7 @@ function NewSupeForm({onAddSuperhero}) {
                     name="name"
                     value={power}
                     placeholder="Power..."
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setPower(e.target.value)}
                 />
                 <input className='SubmitInput' type="submit" value="Submit" />
             </form>
