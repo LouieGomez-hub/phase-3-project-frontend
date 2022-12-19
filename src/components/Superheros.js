@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NewSupeForm from './NewSupeForm';
 
 function Superheros({ superheros }) {
     let heroSuite;
@@ -19,7 +20,10 @@ function Superheros({ superheros }) {
     })
 
     return (
-        <div>{heroSuite}</div>
+        <div>
+          <NewSupeForm />
+          {heroSuite}
+        </div>
     )
 }
 
