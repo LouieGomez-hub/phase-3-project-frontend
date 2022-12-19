@@ -29,7 +29,7 @@ function NewSupeForm({onAddSuperhero}) {
     return (
         <div>
             <form className='NewSupe' onSubmit={handleSubmit}>
-                <label>Add Superhero:</label>
+                <label>Add Superhero: </label>
                 <input
                     type="text"
                     name="name"
@@ -37,13 +37,15 @@ function NewSupeForm({onAddSuperhero}) {
                     placeholder="Name..."
                     onChange={(e) => setName(e.target.value)}
                 />
-                <input
+                <br/>
+                <input className='input2'
                     type="text"
                     name="name"
                     value={power}
                     placeholder="Power..."
                     onChange={(e) => setPower(e.target.value)}
                 />
+                <br/>
                 <input className='SubmitInput' type="submit" value="Submit" />
             </form>
         </div>

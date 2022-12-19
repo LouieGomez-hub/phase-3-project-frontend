@@ -68,8 +68,9 @@ p, .Home-component {
   display: inline-block;
   width: 33%;
   margin-left: 0%;
-  margin-block-end: 7%;
+  margin-block-end: 5%;
   margin-top: 1%;
+  margin-block-start: 5%;
 }
 
 .cards {
@@ -97,4 +98,31 @@ p, .Home-component {
 .btn {
   display: flex;
   justify-content: center;
+}
+
+label {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: -2px -2px royalblue;
+  color: peachpuff;
+  margin-left: 30%;
+  font-size: 25px;
+}
+
+input {
+  vertical-align: text-bottom;
+}
+
+.input2 {
+  margin-left: 45%;
+}
+
+.SubmitInput {
+  margin-left: 45%;
+  font-family: Georgia;
+  text-shadow: 1px 1px black;
+  color: rgb(210, 156, 87);
+  width: 11.3%;
+  font-weight: bold;
+  font-size: 15px;
 }
