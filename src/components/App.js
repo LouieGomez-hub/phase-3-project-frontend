@@ -9,7 +9,6 @@ import NewSupeForm from './NewSupeForm';
 
 function App() {
     const [superheros, setSuperheros] = useState([]);
-    const [comments, setComments] = useState("");
 
     useEffect(() => {
         fetch("http://localhost:9292/superheros")
@@ -18,14 +17,6 @@ function App() {
             setSuperheros(superheros)
         )
     }, [])
-
-    useEffect(() => {
-        fetch("http://localhost:9292/comments")
-        .then((res) => res.json())
-        .then((comments) => 
-            setComments(comments)
-        )
-    })
 
     function handleAddSupe(newSupe) {
         setSuperheros([...superheros, newSupe])
