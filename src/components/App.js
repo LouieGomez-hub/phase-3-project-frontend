@@ -4,7 +4,6 @@ import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
 import Superheros from './Superheros';
-import Comments from './Comments';
 import NewSupeForm from './NewSupeForm';
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Home />}/>
                 <Route exact path="/superheros" element={<Superheros superheros={superheros} />}/>
-                <Route exact path="/superheros/:id" element={<Comments comments={comments} />}/>
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
             </Routes>
