@@ -128,8 +128,8 @@ input {
 }
 
 h1, .About-component {
-  margin-left: 42%;
-  color: whitesmoke;
+  margin-left: 40%;
+  color: greenyellow;
   font-family: 'Times New Roman';
   text-decoration: underline;
   text-decoration-style: dashed;
@@ -137,10 +137,10 @@ h1, .About-component {
 }
 
 p, .About-component {
-  margin-left: 42%;
-  color: whitesmoke;
+  margin-left: 37%;
+  color: yellow;
   font-family: 'Times New Roman';
-  margin-top: -1%;
-  font-size: 20px;
+  margin-top: 1%;
+  font-size: 25px;
   font-style: italic;
 }
