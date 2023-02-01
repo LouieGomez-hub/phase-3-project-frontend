@@ -126,3 +126,21 @@ input {
   font-weight: bold;
   font-size: 15px;
 }
+
+h1, .About-component {
+  margin-left: 42%;
+  color: whitesmoke;
+  font-family: 'Times New Roman';
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  margin-top: 5%;
+}
+
+p, .About-component {
+  margin-left: 42%;
+  color: whitesmoke;
+  font-family: 'Times New Roman';
+  margin-top: -1%;
+  font-size: 20px;
+  font-style: italic;
+}
