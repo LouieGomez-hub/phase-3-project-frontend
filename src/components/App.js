@@ -20,18 +20,13 @@ function App() {
     function handleAddSupe(newSupe) {
         setSuperheros([...superheros, newSupe])
     }
-
-    function handleDeleteSupe(deletedSupe) {
-        const updatedSuperheros = superheros.filter((superhero) => superhero.id !== deletedSupe.id)
-        setSuperheros(updatedSuperheros)
-    }
     
     return (
         <div>
             <NavBar />
             <Routes>
                 <Route exact path="/" element={<Home />}/>
-                <Route exact path="/superheros" element={<Superheros superheros={superheros} onDeleteSuperhero={handleDeleteSupe} />}/>
+                <Route exact path="/superheros" element={<Superheros superheros={superheros} />}/>
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
             </Routes>
