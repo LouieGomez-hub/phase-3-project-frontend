@@ -24,7 +24,7 @@ function EditSuperhero({ superhero, onUpdateSuperhero }) {
       <div>
         <form className='EditSupe' onSubmit={handleSubmit}>
           <label>Edit: </label>
-          <input
+          <input className="input3"
             type="text"
             name="name"
             value={name}
@@ -32,7 +32,7 @@ function EditSuperhero({ superhero, onUpdateSuperhero }) {
             onChange={(e) => setName(e.target.value)}
           />
           <br/>
-          <input className='input2'
+          <input className='input4'
             type="text"
             name="name"
             value={power}
@@ -40,7 +40,7 @@ function EditSuperhero({ superhero, onUpdateSuperhero }) {
             onChange={(e) => setPower(e.target.value)}
           />
           <br/>
-          <input className='SubmitInput' type="submit" value="Submit" />
+          <input className='EditInput' type="submit" value="Submit" />
         </form>
       </div>
     )
