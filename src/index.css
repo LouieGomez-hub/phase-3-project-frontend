@@ -98,6 +98,7 @@ p, .Home-component {
 .btn {
   display: flex;
   justify-content: center;
+  margin-block-end: 4%;
 }
 
 label {
@@ -144,4 +145,10 @@ p, .About-component {
   font-size: 25px;
   font-style: italic;
   word-spacing: 10px;
+}
+
+.deletebtn {
+  color: white;
+  background-color: red;
+  border-color: darkred;
 }

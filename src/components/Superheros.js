@@ -23,7 +23,7 @@ function Superheros({ superheros, onDeleteClick }) {
               <h1 className='content-name'>Alias: <em>{name}</em></h1>
               <p className='content-attr'><strong>Powers:</strong> <em>{power}</em></p>
               <Link className='btn' to={`/superheros/${superhero.id}`}>View Comments</Link>
-              <button onClick={handleDeleteClick}>X</button>  
+              <button className='deletebtn' onClick={handleDeleteClick}>Delete</button>  
             </div>
           </div>
         )
