@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import EditSuperhero from './EditSuperheros';
 import NewSupeForm from './NewSupeForm';
 
-function Superheros({ superheros, onDeleteClick }) {
+function Superheros({ superheros, onDeleteClick, onUpdateSuperhero }) {
     let heroSuite;
 
     heroSuite = superheros.map(superhero => {
@@ -18,6 +17,22 @@ function Superheros({ superheros, onDeleteClick }) {
           
         }
 
+          function handleEditSubmit(e) {
+            e.preventDefault();
+            fetch(`http://localhost:9292/superheros/${superhero.id}`, {
+              method: "PATCH",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name: name,
+                power: power,
+              }),
+            })
+            .then((res) => res.json())
+            .then((updatedSuperhero) => onUpdateSuperhero(updatedSuperhero));
+          }
+
         return (
           <div key={id} className='suite-container'>
             <div className='cards'>
@@ -25,7 +40,7 @@ function Superheros({ superheros, onDeleteClick }) {
               <p className='content-attr'><strong>Powers:</strong> <em>{power}</em></p>
               <Link className='btn' to={`/superheros/${superhero.id}`}>View Comments</Link>
               <button className='deletebtn' onClick={handleDeleteClick}>Delete</button>
-              <EditSuperhero />  
+              <button className='deletebtn' onClick={handleEditSubmit}>Edit</button>
             </div>
           </div>
         )
