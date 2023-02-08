@@ -6,6 +6,7 @@ import About from './About';
 import Superheros from './Superheros';
 import NewSupeForm from './NewSupeForm';
 import EditSuperheros from './EditSuperheros';
+import Comments from './Comments';
 
 function App() {
     const [superheros, setSuperheros] = useState([]);
@@ -42,6 +43,7 @@ function App() {
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
                 <Route exact path="/superheros" element={<EditSuperheros onUpdateSupe={handleUpdateSupe} />}/>
+                <Route exact path="/superheros/:id" element={<Comments />}/>
             </Routes>
         </div>
     )
