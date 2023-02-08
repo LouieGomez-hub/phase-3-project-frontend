@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import EditSuperheros from './EditSuperheros';
 import NewSupeForm from './NewSupeForm';
 
 function Superheros({ superheros, onDeleteClick }) {
@@ -24,6 +25,7 @@ function Superheros({ superheros, onDeleteClick }) {
               <p className='content-attr'><strong>Powers:</strong> <em>{power}</em></p>
               <Link className='btn' to={`/superheros/${superhero.id}`}>View Comments</Link>
               <button className='deletebtn' onClick={handleDeleteClick}>Delete</button>
+              <EditSuperheros />
             </div>
           </div>
         )

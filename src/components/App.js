@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Superheros from './Superheros';
 import NewSupeForm from './NewSupeForm';
+import EditSuperheros from './EditSuperheros';
 
 function App() {
     const [superheros, setSuperheros] = useState([]);
@@ -20,6 +21,17 @@ function App() {
     function handleAddSupe(newSupe) {
         setSuperheros([...superheros, newSupe])
     }
+
+    function handleUpdateSupe(updatedSupe) {
+        const updatedSuperheros = superheros.map((superhero) => {
+            if(superhero.id === updatedSupe.id) {
+                return updatedSupe;
+            } else {
+                return superhero;
+            }
+        });
+        setSuperheros(updatedSuperheros)
+    }
     
     return (
         <div>
@@ -29,6 +41,7 @@ function App() {
                 <Route exact path="/superheros" element={<Superheros superheros={superheros} />}/>
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
+                <Route exact path="/superheros" element={<EditSuperheros superheros={superheros} onUpdateSupe={handleUpdateSupe} />}/>
             </Routes>
         </div>
     )
