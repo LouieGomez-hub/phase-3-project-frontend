@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 
 function EditSuperheros({ superhero, onUpdateSupe }) {
-    const [name, setName] = useState("");
     const [power, setPower] = useState("");
 
     function handleSubmit(e) {
@@ -12,7 +11,6 @@ function EditSuperheros({ superhero, onUpdateSupe }) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                name: name,
                 power: power,
             }),
         })
@@ -23,24 +21,14 @@ function EditSuperheros({ superhero, onUpdateSupe }) {
     return (
         <div>
             <form className='UpdatedSupe' onSubmit={handleSubmit}>
-                <label>Edit: </label>
+                <input className='EditInput' type="submit" value="Edit" />
                 <input className='input3'
-                    type="text"
-                    name="name"
-                    value={name}
-                    placeholder="Name..."
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <br/>
-                <input className='input4'
                     type="text"
                     name="name"
                     value={power}
                     placeholder="Power..."
                     onChange={(e) => setPower(e.target.value)}
                 />
-                <br/>
-                <input className='SubmitInput' type="submit" value="Submit" />
             </form>
         </div>
     )
