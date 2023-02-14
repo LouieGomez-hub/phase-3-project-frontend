@@ -43,7 +43,7 @@ function App() {
                 <Route exact path="/superheros" element={<NewSupeForm onAddSuperhero={handleAddSupe} />}/>
                 <Route exact path="/about" element={<About />}/>
                 <Route exact path="/superheros" element={<EditSuperheros onUpdateSupe={handleUpdateSupe} />}/>
-                <Route exact path="/superheros/:id" element={<Comments superheros={superheros} />}/>
+                <Route exact path="/superheros/:superhero_id/comments" element={<Comments superheros={superheros} />}/>
             </Routes>
         </div>
     )
