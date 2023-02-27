@@ -7,6 +7,7 @@ import Superheros from './Superheros';
 import NewSupeForm from './NewSupeForm';
 import EditSuperheros from './EditSuperheros';
 import Comments from './Comments';
+import NewCommentForm from './NewCommentForm';
 
 function App() {
     const [superheros, setSuperheros] = useState([]);
@@ -21,6 +22,10 @@ function App() {
 
     function handleAddSupe(newSupe) {
         setSuperheros([...superheros, newSupe])
+    }
+
+    function handleAddComment(newComment) {
+        setSuperheros([...superheros, newComment])
     }
 
     function handleUpdateSupe(updatedSupe) {
@@ -44,6 +49,7 @@ function App() {
                 <Route exact path="/about" element={<About />}/>
                 <Route exact path="/superheros" element={<EditSuperheros onUpdateSupe={handleUpdateSupe} />}/>
                 <Route exact path="/superheros/:superhero_id/comments" element={<Comments superheros={superheros} />}/>
+                <Route exact path="/superheros/:superhero_id/comments" element={<NewCommentForm onAddComment={handleAddComment} />}/>
             </Routes>
         </div>
     )

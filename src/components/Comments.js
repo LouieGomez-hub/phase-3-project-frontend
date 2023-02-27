@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import NewCommentForm from './NewCommentForm';
 
 function Comments({ superheros }) {
   const {superhero_id} = useParams()
@@ -9,6 +10,7 @@ function Comments({ superheros }) {
     
   return (
     <div>
+      <NewCommentForm />
       {supeToDisplay.comments.map((comment) => {
         return (
         <div className='comment-cards'>
