@@ -42,7 +42,7 @@ function NewCommentForm({onAddComment}) {
                     type="text"
                     name="name"
                     value={superhero_id}
-                    placeholder="Enter Here..."
+                    placeholder="Enter ID..."
                     onChange={(e) => setSuperhero_id(e.target.value)}
                 />
                 <input className='SubmitInput' type="submit" value="Submit" />
