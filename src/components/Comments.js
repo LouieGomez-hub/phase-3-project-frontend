@@ -12,7 +12,7 @@ function Comments({ superheros }) {
       {supeToDisplay.comments.map((comment) => {
         return (
         <div className='comment-cards'>
-          <h1 className='comment-user'>Anonymous: </h1>
+          <h3 className='comment-user'>Anonymous: </h3>
           <ul> <em>{comment.text}</em> </ul>
         </div>
         )
