@@ -29,8 +29,8 @@ function NewCommentForm({onAddComment}) {
     return (
         <div>
             <form className='NewComment' onSubmit={handleSubmit}>
-                <label>Add Comment: </label>
-                <input
+                <label className='label2'>Add Comment: </label>
+                <input className='input2'
                     type="text"
                     name="name"
                     value={text}
@@ -38,7 +38,7 @@ function NewCommentForm({onAddComment}) {
                     onChange={(e) => setText(e.target.value)}
                 />
                 <br/>
-                <input
+                <input className='input2'
                     type="text"
                     name="name"
                     value={superhero_id}
