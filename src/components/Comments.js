@@ -8,9 +8,11 @@ function Comments({ superheros }) {
   console.log(supeToDisplay)
     
   return (
-    <div>
-      
-    </div>
+    <ul>
+      {supeToDisplay.comments.map((comment) => {
+        return (comment.text)
+      })}
+    </ul>
   )
 }
 
